@@ -1,18 +1,22 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-br" class="no-js">
-
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover">
+        <title>Laticínios Porto Alegre</title>
         <meta name="format-detection" content="telephone=no">
-        <link rel="stylesheet" href="assets/css/style.scss">
+        <link rel="stylesheet" href="/assets/css/style.scss">
     </head>
 
     <body>
+        <?php require "partials/header.php"; ?>
 
-        <script src="assets/js/vendor.js"></script>
-        <script src="assets/js/main.js"></script>
+        <?php require "partials/footer.php"; ?>
+        
+        <script type="text/javascript" src="/assets/js/vendor/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/js/vendor/bootstrap.bundle.min.js"></script>
+        <script type="text/javascript" src="/assets/js/vendor/slick.min.js"></script>
+        <script src="/assets/js/custom.js"></script>
     </body>
-
 </html>

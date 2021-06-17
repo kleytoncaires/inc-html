@@ -1,5 +1,5 @@
 /*!
- * Bootstrap v5.0.0 (https://getbootstrap.com/)
+ * Bootstrap v5.0.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -59,7 +59,7 @@
 */
 
 //$fa-font-path: "./node_modules/@fortawesome/fontawesome-free/webfonts";
-$fa-font-path: "assets/fonts";
+$fa-font-path: "/assets/fonts";
 
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/variables';
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/mixins';
@@ -77,24 +77,6 @@ $fa-font-path: "assets/fonts";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
 
-// ==================================================
-// fancyBox v3.5.7
-//
-// Licensed GPLv3 for open source use
-// or fancyBox Commercial License for commercial use
-//
-// http://fancyapps.com/fancybox/
-// Copyright 2019 fancyApps
-//
-// ==================================================
-@function max($numbers...) {
-	@return m#{a}x(#{$numbers});
-}
-
-@function min($numbers...) {
-	@return m#{i}n(#{$numbers});
-}
-@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min";
 
 // ==================================================
 // Slick Carousel
@@ -106,8 +88,8 @@ $fa-font-path: "assets/fonts";
 // Issues: http://github.com/kenwheeler/slick/issues
 //
 // ==================================================
-$slick-font-path: "./assets/fonts/" !default;
-$slick-loader-path: "./assets/img/" !default;
+$slick-font-path: "/assets/fonts/" !default;
+$slick-loader-path: "/assets/img/" !default;
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 @import "../../node_modules/slick-carousel/slick/slick-theme.scss";
 
@@ -118,12 +100,13 @@ $base-size: 16;
 }
 
 // Variables
-$image-path: "assets/img";
-$font-path: "assets/fonts";
+$image-path: "/assets/img";
+$font-path: "/assets/fonts";
 
 // Theme Components
 @import "fonts";
-@import "reset";
 @import "global";
-@import "header";
-@import "footer";
+
+
+
+

@@ -15,7 +15,7 @@ $(function () {
 
 	// masks
 	var maskBehavior = function (val) {
-			return val.replace(/\D/g, '').length === 11
+			return 11 === val.replace(/\D/g, '').length
 				? '(00) 00000-0000'
 				: '(00) 0000-00009';
 		},
@@ -34,9 +34,11 @@ $(function () {
 			//O campo URL diz o caminho de onde virá os dados
 			//É importante concatenar o valor digitado no CEP
 			url: 'https://viacep.com.br/ws/' + $(this).val() + '/json/unicode/',
+
 			//Aqui você deve preencher o tipo de dados que será lido,
 			//no caso, estamos lendo JSON.
 			dataType: 'json',
+
 			//SUCESS é referente a função que será executada caso
 			//ele consiga ler a fonte de dados com sucesso.
 			//O parâmetro dentro da função se refere ao nome da variável
@@ -49,6 +51,7 @@ $(function () {
 				$('#form-bairro').val(resposta.bairro);
 				$('#form-cidade').val(resposta.localidade);
 				$('#form-uf').val(resposta.uf);
+
 				//Vamos incluir para que o Número seja focado automaticamente
 				//melhorando a experiência do usuário
 				$('#form-numero').focus();
