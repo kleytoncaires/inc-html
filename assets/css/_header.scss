@@ -1,0 +1,13 @@
+.headerMenu {
+	background-color: $white;
+	position: absolute;
+	left: 0;
+	transition: 0.3s;
+	top: 0;
+	width: 100%;
+	z-index: 20;
+
+	&.sticky {
+		position: fixed;
+	}
+}
