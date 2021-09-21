@@ -104,8 +104,11 @@ $image-path: "/assets/img";
 $font-path: "/assets/fonts";
 
 // Theme Components
+@import "reset";
 @import "fonts";
 @import "global";
+@import "header";
+@import "footer";
 
 
 
