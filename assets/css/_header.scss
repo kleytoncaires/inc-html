@@ -1,6 +1,6 @@
 .headerMenu {
 	background-color: $white;
-	position: absolute;
+	position: sticky;
 	left: 0;
 	transition: 0.3s;
 	top: 0;
@@ -8,7 +8,7 @@
 	z-index: 20;
 
 	&.sticky {
-		position: fixed;
+		
 	}
 }
 .navbar-brand {

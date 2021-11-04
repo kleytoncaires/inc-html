@@ -1,5 +1,21 @@
+/*
+Theme Name: Inc Digital
+Theme URI: https://incdigital.com.br/
+Author: Inc Digital
+Author URI: https://incdigital.com.br/
+Description: Our default theme
+Version: 2021
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: incdigital
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+
+
 /*!
- * Bootstrap v5.0.1 (https://getbootstrap.com/)
+ * Bootstrap v5.1.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
@@ -59,7 +75,7 @@
 */
 
 //$fa-font-path: "./node_modules/@fortawesome/fontawesome-free/webfonts";
-$fa-font-path: "/assets/fonts";
+$fa-font-path: "assets/fonts";
 
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/variables';
 @import '../../node_modules/@fortawesome/fontawesome-free/scss/mixins';
@@ -77,6 +93,24 @@ $fa-font-path: "/assets/fonts";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
 
+// ==================================================
+// fancyBox v3.5.7
+//
+// Licensed GPLv3 for open source use
+// or fancyBox Commercial License for commercial use
+//
+// http://fancyapps.com/fancybox/
+// Copyright 2019 fancyApps
+//
+// ==================================================
+@function max($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+	@return m#{i}n(#{$numbers});
+}
+@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min";
 
 // ==================================================
 // Slick Carousel
@@ -88,8 +122,8 @@ $fa-font-path: "/assets/fonts";
 // Issues: http://github.com/kenwheeler/slick/issues
 //
 // ==================================================
-$slick-font-path: "/assets/fonts/" !default;
-$slick-loader-path: "/assets/img/" !default;
+$slick-font-path: "./assets/fonts/" !default;
+$slick-loader-path: "./assets/img/" !default;
 @import "../../node_modules/slick-carousel/slick/slick.scss";
 @import "../../node_modules/slick-carousel/slick/slick-theme.scss";
 
@@ -98,18 +132,32 @@ $base-size: 16;
 @function size($target, $context: $base-size) {
 	@return ($target / $context) * 1em;
 }
+@mixin placeholder-color($color) {
+	&::-webkit-input-placeholder {
+		/* WebKit browsers */
+		color: $color;
+	}
+	&:-moz-placeholder {
+		/* Mozilla Firefox 4 to 18 */
+		color: $color;
+	}
+	&::-moz-placeholder {
+		/* Mozilla Firefox 19+ */
+		color: $color;
+	}
+	&:-ms-input-placeholder {
+		/* Internet Explorer 10+ */
+		color: $color;
+	}
+}
 
 // Variables
-$image-path: "/assets/img";
-$font-path: "/assets/fonts";
+$image-path: "assets/img";
+$font-path: "assets/fonts";
 
 // Theme Components
-@import "reset";
 @import "fonts";
+@import "reset";
 @import "global";
 @import "header";
 @import "footer";
-
-
-
-

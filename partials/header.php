@@ -1,22 +1,14 @@
-<header class="headerMenu shadow" id="headerBar">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
-        <div class="container">
-            <a class="navbar-brand" href="">
-                <img src="assets/img/logo.svg" alt="">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarHeader">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-</header>
+<!DOCTYPE html>
+<html lang="pt-br" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0, viewport-fit=cover">
+    <title></title>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <?php require "partials/menu.php"; ?>
