@@ -70,28 +70,16 @@ Use it to make something cool, have fun, and share what you've learned with othe
 // scss-docs-end import-stack
 
 /*!
-* Font Awesome Free 5.13.0 by @fontawesome - https://fontawesome.com
+* Font Awesome Free 6.0.0 by @fontawesome - https://fontawesome.com
 * License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
 */
 
 //$fa-font-path: "./node_modules/@fortawesome/fontawesome-free/webfonts";
 $fa-font-path: "assets/fonts";
 
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/variables';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/mixins';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/core';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/larger';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/fixed-width';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/list';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/bordered-pulled';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/animated';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/rotated-flipped';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/stacked';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/icons';
-@import '../../node_modules/@fortawesome/fontawesome-free/scss/screen-reader';
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
-@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 
 // ==================================================
 // fancyBox v3.5.7
@@ -113,19 +101,14 @@ $fa-font-path: "assets/fonts";
 @import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min";
 
 // ==================================================
-// Slick Carousel
-// Version: 1.8.1
-// Author: Ken Wheeler
-// Website: http://kenwheeler.github.io
-// Docs: http://kenwheeler.github.io/slick
-// Repo: http://github.com/kenwheeler/slick
-// Issues: http://github.com/kenwheeler/slick/issues
-//
+//  * Swiper 8.0.5
+//  * Most modern mobile touch slider and framework with hardware accelerated transitions
+//  * https://swiperjs.com
+//  * Copyright 2014-2022 Vladimir Kharlampidi
+//  * Released under the MIT License
+//  * Released on: February 10, 2022
 // ==================================================
-$slick-font-path: "./assets/fonts/" !default;
-$slick-loader-path: "./assets/img/" !default;
-@import "../../node_modules/slick-carousel/slick/slick.scss";
-@import "../../node_modules/slick-carousel/slick/slick-theme.scss";
+@import "../../node_modules/swiper/swiper";
 
 // Mixins
 $base-size: 16;
