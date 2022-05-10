@@ -133,7 +133,7 @@ gulp.task('styles', () => {
 		.pipe(lineec()) // Consistent Line Endings for non UNIX systems.
 		.pipe(gulp.dest(config.styleDestination))
 		.pipe(filter('**/*.css')) // Filtering stream to only css files.
-		.pipe(mmq({log: false})) // Merge Media Queries only for .min.css version.
+		.pipe(mmq({log: true})) // Merge Media Queries only for .min.css version.
 		.pipe(browserSync.stream()) // Reloads style.css if that is enqueued.
 		.pipe(rename({suffix: '.min'}))
 		.pipe(minifycss({maxLineLen: 10}))
