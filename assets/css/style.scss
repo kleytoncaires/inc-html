@@ -1,13 +1,13 @@
 /*
-Theme Name: Inc Digital
+Theme Name: Caires Digital
 Theme URI: https://incdigital.com.br/
-Author: Inc Digital
+Author: Caires Digital
 Author URI: https://incdigital.com.br/
 Description: Our default theme
-Version: 2021
+Version: 2022.7
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: incdigital
+Text Domain: cairesdigital
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
@@ -82,7 +82,7 @@ $fa-font-path: "assets/fonts";
 @import "../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 
 // ==================================================
-// fancyBox v3.5.7
+// fancyBox v4.0.27
 //
 // Licensed GPLv3 for open source use
 // or fancyBox Commercial License for commercial use
@@ -91,14 +91,7 @@ $fa-font-path: "assets/fonts";
 // Copyright 2019 fancyApps
 //
 // ==================================================
-@function max($numbers...) {
-	@return m#{a}x(#{$numbers});
-}
-
-@function min($numbers...) {
-	@return m#{i}n(#{$numbers});
-}
-@import "../../node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min";
+@import "../../node_modules/@fancyapps/ui/dist/fancybox";
 
 // ==================================================
 //  * Swiper 8.1.4
